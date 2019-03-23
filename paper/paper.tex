@@ -1,0 +1,132 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage[format=plain, font=it]{caption}
+\usepackage{mathpazo}
+\usepackage{biblatex}
+
+\begin{document}
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	\center
+	\textsc{\LARGE University of Minnesota}\\[0.35cm]
+	\textsc{\Large SENG 5852}\\[1.5cm]
+	{\huge\bfseries Continuous Integration, Delivery, \& Deployment: Transforming the Software Industry}\\[0.35cm]	
+	\textsc{\Large Research Paper}\\[1cm] 
+	\textsc{\large\author
+		LLue Xiong\\
+	}
+	\vfill\vfill\vfill
+	\large\today
+	\vfill
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+The software industry is transforming at a rapid pace to accommodate the dynamic nature of the market and as a result, it continues to struggle to find process-identity with continuous software engineering. Software engineering has for two decades, experimented with the concept of distributing software in faster release cycles; endeavoring to do so without sacrificing reliability and security. To achieve such a goal, there has been a widespread movement in the technical community to advocate for using Agile practices, and in particular: continuous integration, delivery, and deployment. The traditional methods of software development no longer meet the need of businesses that -- now more than ever -- want to proactively engage and retain their customers. The organizational transition to Agile practices demands a large mentality change and require individuals to recognize software as incremental features developed with cross-collaboration of small comprehensive team units, as opposed to large modules developed by siloed units.
+
+\section{Body}
+	\subsection{What is Continuous Integration, Delivery, \& Deployment}
+		\subsubsection{Inherently Agile}
+		\begin{itemize}[noitemsep]
+			\item What is Agile? 
+			\item What are the core ideas of Agile?
+			\item How does Agile tie in with CI/CDE/CD?
+		\end{itemize}
+		\vspace{-7mm}
+		\subsubsection{Continuous Integration}
+		\begin{itemize}[noitemsep]
+			\item What does CI mean?
+		\end{itemize}
+		\subsubsection{Continuous Delivery}
+		\begin{itemize}[noitemsep]
+			\item What does CDE mean?
+		\end{itemize}
+		\subsubsection{Continuous Deployment}
+		\begin{itemize}[noitemsep]
+			\item What does CD mean?
+		\end{itemize}
+		
+	\subsection{Differences of Interpretation \& Implementation}
+		\subsubsection{Viewpoint of Software Professionals}
+		\begin{itemize}[noitemsep]
+			\item How do software professionals interpret and implement CI/CD/CDE?
+		\end{itemize}
+		\subsubsection{Viewpoint of Academic Researchers}
+		\begin{itemize}[noitemsep]
+			\item How do academic researchers interpret and believe how CI/CD/CDE should be implemented?
+		\end{itemize}
+		\subsubsection{Collaboration Effort}
+		\begin{itemize}[noitemsep]
+			\item What effort is there to bridge the phenomena of non-collaboration between developers and researchers?
+		\end{itemize}
+
+	\subsection{Benefits of Continuous Integration, Delivery, \& Deployment}
+		\subsubsection{Self-healing Systems}
+		\begin{itemize}[noitemsep]
+			\item What are the metrics and tools that software professionals use to mitigate having to manually fix software issues?
+			\item How do these self-healing systems work?
+		\end{itemize}
+		\subsubsection{Reduce Risk}
+		\begin{itemize}[noitemsep]
+			\item How does continuous software engineering reduces risk in systems?
+		\end{itemize}
+		\subsubsection{Faster Release Cycles}
+		\begin{itemize}[noitemsep]
+			\item How are faster release cycles are achieved?
+		\end{itemize}
+		\subsubsection{Overall Cost Reduction}
+		\begin{itemize}[noitemsep]
+			\item Why will all of the above will reduce cost?
+		\end{itemize}
+		
+	\subsection{Struggles of Traceability}
+		\subsubsection{Importance}
+		\begin{itemize}[noitemsep]
+			\item What is the importance of traceability for the software engineering community?
+		\end{itemize}
+		\subsubsection{Problem of Mapping}
+		\begin{itemize}[noitemsep]
+			\item What is the problem of mapping requirements to implemented code and the converse?
+		\end{itemize}
+		\subsubsection{Eiffel Framework}
+		\begin{itemize}[noitemsep]
+			\item What is the proposed solution to address traceability issues in CI/CDE/CD environments?
+		\end{itemize}
+		
+	\subsection{Transition an Agile Environment}
+		\subsubsection{The Effect of Organizational Change to Agile}
+		\begin{itemize}[noitemsep]
+			\item What are the problems that businesses face in attempt to switch to Agile practices?
+		\end{itemize}
+		\subsubsection{Roles in Agile}
+		\begin{itemize}[noitemsep]
+			\item What are typical roles that each individual plays in an Agile environment? 
+			\item Why do these roles exist?
+		\end{itemize}
+		\subsubsection{Paradigm Shift in Leadership}
+		\begin{itemize}[noitemsep]
+			\item How has leadership changed as a result of Agile?
+		\end{itemize}
+
+\section{Conclusion}
+	\subsection{Rephrase Thesis Statement}
+	\subsection{Closing Statement}
+
+\newpage
+\section{Bibliography}
+\begin{thebibliography}{6}
+	\bibitem{Atkinson, Edwards} Atkinson, B., \& Edwards, D. (2018). Generic Pipelines Using Docker: The DevOps Guide to Building Reusable, Platform Agnostic CI/CD Frameworks. Berkeley, CA: Apress. doi:\\\texttt{https://doi.org/10.1007/978-1-4842-3655-0}
+	\bibitem{Bosch} Bosch, J. (2014). Continuous Software Engineering. Cham: Springer International Publishing. doi:\\\texttt{https://doi-org.ezp1.lib.umn.edu/10.1007/978-3-319-11283-1.}
+	\bibitem{Stackify} Continuous Delivery, Deployment \& Integration: 20 Key Differences. (2018, June 04). Retrieved from \\\texttt{https://stackify.com/continuous-delivery-vs-continuous-\\deployment-vs-continuous-integration}
+	\bibitem{Shahin, Babar, Zhu} Shahin, M., Babar, M. A., \& Zhu, L. (2017). Continuous Integration, Delivery and Deployment: A Systematic Review on Approaches, Tools, Challenges and Practices. IEEE Access, 5, 3909-3943. doi:\\\texttt{10.1109/access.2017.2685629}
+	\bibitem{Stahl} St\aa hl, D. (2017). Large Scale Continuous Integration and Delivery: Making Great Software Better and Faster. [Groningen]: University of Groningen.
+	\bibitem{Stahl, Hallen, Bosch} St\aa hl, D., Hall\'{e}n, K., \& Bosch, J. (2016). Achieving traceability in large scale continuous integration and delivery deployment, usage and validation of the eiffel framework. Empirical Software Engineering, 22(3), 967-995. doi:\\\texttt{10.1007/s10664-016-9457-1}
+\end{thebibliography}
+
+\end{document}
