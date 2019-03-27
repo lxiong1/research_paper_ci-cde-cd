@@ -4,6 +4,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
 \usepackage{mathpazo}
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage{apacite}
 
 \begin{document}
 
@@ -36,7 +38,7 @@ Software engineering has for two decades, experimented with the concept of distr
 	\subsection{What is Continuous Integration, Delivery, \& Deployment}
 		\subsubsection{Inherently Agile}
 		\begin{itemize}[noitemsep]
-			\item What is Agile? 
+			\item What is Agile?
 			\begin{itemize}
 				\item
 			\end{itemize}
@@ -175,7 +177,7 @@ Software engineering has for two decades, experimented with the concept of distr
 		\begin{itemize}[noitemsep]
 			\item How has leadership changed as a result of Agile?
 			\begin{itemize}
-				\item 
+				\item
 			\end{itemize}
 		\end{itemize}
 
@@ -185,27 +187,8 @@ Software engineering has for two decades, experimented with the concept of distr
 
 \newpage
 \section{Bibliography}
-\begin{thebibliography}{9}
-	\bibitem{atkinson} 
-	Atkinson, B., \& Edwards, D. (2018). Generic Pipelines Using Docker: The DevOps Guide to Building Reusable, Platform Agnostic CI/CD Frameworks. Berkeley, CA: Apress. doi:\\\texttt{https://doi.org/10.1007/978-1-4842-3655-0}
-	
-	\bibitem{meyer}
-	Meyer, B. (2014). Agile! the Good, the Hype and the Ugly. Springer International Publishing. doi:\\\texttt{https://doi-org.ezp3.lib.umn.edu/10.1007/978-3-319-05155-0}
-	
-	\bibitem{bosch} 
-	Bosch, J. (2014). Continuous Software Engineering. Springer International Publishing. doi:\\\texttt{https://doi-org.ezp1.lib.umn.edu/10.1007/978-3-319-11283-1.}
-	
-	\bibitem{stackify} 
-	Continuous Delivery, Deployment \& Integration: 20 Key Differences. (2018, June 04). Retrieved from \\\texttt{https://stackify.com/continuous-delivery-vs-continuous-\\deployment-vs-continuous-integration}
-	
-	\bibitem{shahin} 
-	Shahin, M., Babar, M. A., \& Zhu, L. (2017). Continuous Integration, Delivery and Deployment: A Systematic Review on Approaches, Tools, Challenges and Practices. IEEE Access, 5, 3909-3943. doi:\\\texttt{10.1109/access.2017.2685629}
-	
-	\bibitem{groningen} St\aa hl, D. (2017). 
-	Large Scale Continuous Integration and Delivery: Making Great Software Better and Faster. [Groningen]: University of Groningen.
-	
-	\bibitem{stahl} 
-	St\aa hl, D., Hall\'{e}n, K., \& Bosch, J. (2016). Achieving traceability in large scale continuous integration and delivery deployment, usage and validation of the eiffel framework. Empirical Software Engineering, 22(3), 967-995. doi:\\\texttt{10.1007/s10664-016-9457-1}
-\end{thebibliography}
+\nocite{*}
+\bibliographystyle{apacite}
+\bibliography{../bibliography}
 
 \end{document}
