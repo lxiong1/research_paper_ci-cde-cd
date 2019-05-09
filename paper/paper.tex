@@ -3,9 +3,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
-\usepackage[format=plain, font=it]{caption}
 \usepackage{mathpazo}
-\usepackage{biblatex}
+\usepackage{graphicx}
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage{apacite}
 
 \begin{document}
 
@@ -14,10 +15,10 @@
 	\center
 	\textsc{\LARGE University of Minnesota}\\[0.35cm]
 	\textsc{\Large SENG 5852}\\[1.5cm]
-	{\huge\bfseries Continuous Integration, Delivery, \& Deployment: Transforming the Software Industry}\\[0.35cm]	
+	{\huge\bfseries Continuous Integration, Delivery, \& Deployment: What Does It Mean?}\\[0.35cm]	
 	\textsc{\Large Research Paper}\\[1cm] 
-	\textsc{\large\author
-		LLue Xiong\\
+	\textsc{\large\author\
+		Lue Xiong\\
 	}
 	\vfill\vfill\vfill
 	\large\today
@@ -27,91 +28,160 @@
 \tableofcontents
 \newpage
 
-\section{Introduction}
-The software industry is transforming at a rapid pace to accommodate the dynamic nature of the market and as a result, it continues to struggle to find process-identity with continuous software engineering. Software engineering has for two decades, experimented with the concept of distributing software in faster release cycles; endeavoring to do so without sacrificing reliability and security. To achieve such a goal, there has been a widespread movement in the technical community to advocate for using Agile practices, and in particular: continuous integration, delivery, and deployment. The traditional methods of software development no longer meet the need of businesses that -- now more than ever -- want to proactively engage and retain their customers. The organizational transition to Agile practices demands a large mentality change and require individuals to recognize software as incremental features developed with cross-collaboration of small comprehensive team units, as opposed to large modules developed by siloed units.
+\section{Cultural Shift in the Software Industry}
+The software industry is transforming at a rapid pace to accommodate the dynamic nature of the market and as a result, it continues to struggle to find process-identity with continuous software engineering.
 
-\section{Body}
-	\subsection{What is Continuous Integration, Delivery, \& Deployment}
-		\subsubsection{Inherently Agile}
+Software engineering has for two decades, experimented with the concept of distributing software in faster release cycles; endeavoring to do so without sacrificing reliability and security. To achieve such a goal, there has been a widespread movement in the technical community to advocate for using Agile practices, and in particular: continuous integration, delivery, and deployment. The traditional methods of software development no longer meet the need of businesses that -- now more than ever -- want to proactively engage and retain their customers. The organizational transition to Agile practices demands a large mentality change and require individuals to recognize software as incremental features developed with cross-collaboration of small comprehensive team units, as opposed to large modules developed by siloed units.
+
+\section{Born from Agile}
+The word 'Agile' can be quite a jumbled terminology depending who a person talks to. Software professionals have their own experiences and stories of using it in their day-to-day work practices with varying degrees of opinions and outcomes. The Agile Manifesto is a declaration of the principles of Agile, which has a principle stating that the highest priority is satisfying customers with early and often continuous delivery \cite[p. ~50]{meyer_2014}. It is apparent however, that at the heart of Agile is the value of producing software at a quick and efficient pace, without a sacrifice to a team's sustainability. One such software development method that has been existent for over two decades, and fundamentally an expression of the principles of the Agile Manifesto,is Extreme Programming (XP). 
+
+Extreme Programming involves a set of practices including test-first development, automated testing, fast release cycles, refactoring, continuous integration, and among other things. Software professionals have embraced these set of practices for its effectiveness, even if arbitrarily and selectively picking from its' set. Bertrand Meyer, a well-respected individual in the software engineering community, considers many of the XP practices to be 'brilliant'; even going as far as to say that the practices of continuous integration and testing are major factors for the success of modern software projects \cite[p. ~154]{meyer_2014}. Software professionals and organizations have embodied these ideals to keep up with the demands of the software market, and have effectively put them into action.
+
+Of the ideal software practices come commonly known and used vocabulary: continuous integration, delivery, and deployment. Many software professionals however, have misunderstood the above vocabulary and at times, infuse them as one concept without careful and thoughtful distinction. It would therefore, be wise to define each component for what they represent and why it matters.
+
 		\begin{itemize}[noitemsep]
-			\item What is Agile? 
+			\item What is Agile?
+			\begin{itemize}
+				\item \cite{bosch_2014} \& \cite{meyer_2014}
+			\end{itemize}
 			\item What are the core ideas of Agile?
+			\begin{itemize}
+				\item \cite{meyer_2014}
+			\end{itemize}
 			\item How does Agile tie in with CI/CDE/CD?
+			\begin{itemize}
+				\item \cite{shahin_babar_zhu_2017} \& \cite{stackify_2018}
+			\end{itemize}
 		\end{itemize}
 		\vspace{-7mm}
 		\subsubsection{Continuous Integration}
 		\begin{itemize}[noitemsep]
 			\item What does CI mean?
+			\begin{itemize}
+				\item \cite{shahin_babar_zhu_2017} \& \cite{stackify_2018}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Continuous Delivery}
 		\begin{itemize}[noitemsep]
 			\item What does CDE mean?
+			\begin{itemize}
+				\item \cite{shahin_babar_zhu_2017} \& \cite{stackify_2018}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Continuous Deployment}
 		\begin{itemize}[noitemsep]
 			\item What does CD mean?
+			\begin{itemize}
+				\item \cite{shahin_babar_zhu_2017} \& \cite{stackify_2018}
+			\end{itemize}
 		\end{itemize}
 		
 	\subsection{Differences of Interpretation \& Implementation}
 		\subsubsection{Viewpoint of Software Professionals}
 		\begin{itemize}[noitemsep]
 			\item How do software professionals interpret and implement CI/CD/CDE?
+			\begin{itemize}
+				\item \cite{atkinson_edwards_2018} \& \cite{stackify_2018}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Viewpoint of Academic Researchers}
 		\begin{itemize}[noitemsep]
 			\item How do academic researchers interpret and believe how CI/CD/CDE should be implemented?
+			\begin{itemize}
+				\item \cite{bosch_2014}, \cite{shahin_babar_zhu_2017}, \& \cite{stahl_2017}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Collaboration Effort}
 		\begin{itemize}[noitemsep]
 			\item What effort is there to bridge the phenomena of non-collaboration between developers and researchers?
+			\begin{itemize}
+				\item \cite{bosch_2014} \& \cite{stahl_2017}
+			\end{itemize}
 		\end{itemize}
 
 	\subsection{Benefits of Continuous Integration, Delivery, \& Deployment}
 		\subsubsection{Self-healing Systems}
 		\begin{itemize}[noitemsep]
 			\item What are the metrics and tools that software professionals use to mitigate having to manually fix software issues?
+			\begin{itemize}
+				\item \cite{bosch_2014}
+			\end{itemize}
 			\item How do these self-healing systems work?
+			\begin{itemize}
+				\item \cite{bosch_2014}
+			\end{itemize}
 		\end{itemize}
-		\subsubsection{Reduce Risk}
+		\subsubsection{Risk Reduction}
 		\begin{itemize}[noitemsep]
 			\item How does continuous software engineering reduces risk in systems?
+			\begin{itemize}
+				\item \cite{atkinson_edwards_2018}, \cite{bosch_2014}, \cite{stackify_2018}, \& \cite{stahl_2017} \cite{stackify_2018}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Faster Release Cycles}
 		\begin{itemize}[noitemsep]
 			\item How are faster release cycles are achieved?
+			\begin{itemize}
+				\item \cite{atkinson_edwards_2018}, \cite{bosch_2014}, \cite{stackify_2018}, \& \cite{stahl_2017} \cite{stackify_2018}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Overall Cost Reduction}
 		\begin{itemize}[noitemsep]
 			\item Why will all of the above will reduce cost?
+			\begin{itemize}
+				\item \cite{atkinson_edwards_2018}, \cite{bosch_2014}, \cite{stackify_2018}, \& \cite{stahl_2017} \cite{stackify_2018}
+			\end{itemize}
 		\end{itemize}
 		
 	\subsection{Struggles of Traceability}
 		\subsubsection{Importance}
 		\begin{itemize}[noitemsep]
 			\item What is the importance of traceability for the software engineering community?
+			\begin{itemize}
+				\item \cite{stahl_2017} \& \cite{stahl_hallen_bosch_2016}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Problem of Mapping}
 		\begin{itemize}[noitemsep]
 			\item What is the problem of mapping requirements to implemented code and the converse?
+			\begin{itemize}
+				\item \cite{stahl_2017} \& \cite{stahl_hallen_bosch_2016}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Eiffel Framework}
 		\begin{itemize}[noitemsep]
 			\item What is the proposed solution to address traceability issues in CI/CDE/CD environments?
+			\begin{itemize}
+				\item \cite{stahl_2017} \& \cite{stahl_hallen_bosch_2016}
+			\end{itemize}
 		\end{itemize}
 		
 	\subsection{Transition an Agile Environment}
 		\subsubsection{The Effect of Organizational Change to Agile}
 		\begin{itemize}[noitemsep]
 			\item What are the problems that businesses face in attempt to switch to Agile practices?
+			\begin{itemize}
+				\item \cite{bosch_2014} \& \cite{meyer_2014}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Roles in Agile}
 		\begin{itemize}[noitemsep]
-			\item What are typical roles that each individual plays in an Agile environment? 
+			\item What are typical roles that each individual plays in an Agile environment?
+			\begin{itemize}
+				\item \cite{bosch_2014} \& \cite{meyer_2014}
+			\end{itemize}
 			\item Why do these roles exist?
+			\begin{itemize}
+				\item \cite{bosch_2014} \& \cite{meyer_2014}
+			\end{itemize}
 		\end{itemize}
 		\subsubsection{Paradigm Shift in Leadership}
 		\begin{itemize}[noitemsep]
 			\item How has leadership changed as a result of Agile?
+			\begin{itemize}
+				\item \cite{bosch_2014}
+			\end{itemize}
 		\end{itemize}
 
 \section{Conclusion}
@@ -120,13 +190,8 @@ The software industry is transforming at a rapid pace to accommodate the dynamic
 
 \newpage
 \section{Bibliography}
-\begin{thebibliography}{6}
-	\bibitem{Atkinson, Edwards} Atkinson, B., \& Edwards, D. (2018). Generic Pipelines Using Docker: The DevOps Guide to Building Reusable, Platform Agnostic CI/CD Frameworks. Berkeley, CA: Apress. doi:\\\texttt{https://doi.org/10.1007/978-1-4842-3655-0}
-	\bibitem{Bosch} Bosch, J. (2014). Continuous Software Engineering. Cham: Springer International Publishing. doi:\\\texttt{https://doi-org.ezp1.lib.umn.edu/10.1007/978-3-319-11283-1.}
-	\bibitem{Stackify} Continuous Delivery, Deployment \& Integration: 20 Key Differences. (2018, June 04). Retrieved from \\\texttt{https://stackify.com/continuous-delivery-vs-continuous-\\deployment-vs-continuous-integration}
-	\bibitem{Shahin, Babar, Zhu} Shahin, M., Babar, M. A., \& Zhu, L. (2017). Continuous Integration, Delivery and Deployment: A Systematic Review on Approaches, Tools, Challenges and Practices. IEEE Access, 5, 3909-3943. doi:\\\texttt{10.1109/access.2017.2685629}
-	\bibitem{Stahl} St\aa hl, D. (2017). Large Scale Continuous Integration and Delivery: Making Great Software Better and Faster. [Groningen]: University of Groningen.
-	\bibitem{Stahl, Hallen, Bosch} St\aa hl, D., Hall\'{e}n, K., \& Bosch, J. (2016). Achieving traceability in large scale continuous integration and delivery deployment, usage and validation of the eiffel framework. Empirical Software Engineering, 22(3), 967-995. doi:\\\texttt{10.1007/s10664-016-9457-1}
-\end{thebibliography}
+\nocite{*}
+\bibliographystyle{apacite}
+\bibliography{../bibliography}
 
 \end{document}
