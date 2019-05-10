@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -15,7 +15,7 @@
 	\center
 	\textsc{\LARGE University of Minnesota}\\[0.35cm]
 	\textsc{\Large SENG 5852}\\[1.5cm]
-	{\huge\bfseries Continuous Integration, Delivery, \& Deployment: What Does It Mean?}\\[0.35cm]	
+	{\huge\bfseries Continuous Integration, Delivery, \& Deployment: What Do They Mean?}\\[0.35cm]	
 	\textsc{\Large Research Paper}\\[1cm] 
 	\textsc{\large\author\
 		Lue Xiong\\
@@ -28,54 +28,25 @@
 \tableofcontents
 \newpage
 
-\section{Cultural Shift in the Software Industry}
+\section{Introduction}
 The software industry is transforming at a rapid pace to accommodate the dynamic nature of the market and as a result, it continues to struggle to find process-identity with continuous software engineering.
 
 Software engineering has for two decades, experimented with the concept of distributing software in faster release cycles; endeavoring to do so without sacrificing reliability and security. To achieve such a goal, there has been a widespread movement in the technical community to advocate for using Agile practices, and in particular: continuous integration, delivery, and deployment. The traditional methods of software development no longer meet the need of businesses that -- now more than ever -- want to proactively engage and retain their customers. The organizational transition to Agile practices demands a large mentality change and require individuals to recognize software as incremental features developed with cross-collaboration of small comprehensive team units, as opposed to large modules developed by siloed units.
 
-\section{Born from Agile}
-The word 'Agile' can be quite a jumbled terminology depending who a person talks to. Software professionals have their own experiences and stories of using it in their day-to-day work practices with varying degrees of opinions and outcomes. The Agile Manifesto is a declaration of the principles of Agile, which has a principle stating that the highest priority is satisfying customers with early and often continuous delivery \cite[p. ~50]{meyer_2014}. It is apparent however, that at the heart of Agile is the value of producing software at a quick and efficient pace, without a sacrifice to a team's sustainability. One such software development method that has been existent for over two decades, and fundamentally an expression of the principles of the Agile Manifesto,is Extreme Programming (XP). 
+\section{Constitution of Continuous Software Engineering Practices}
+The word 'Agile' can be quite a jumbled terminology depending who a person talks to. Software professionals have their own experiences and stories of using it in their day-to-day work with varying degrees of opinions and outcomes. The Agile Manifesto is a declaration of the principles of Agile, which attempts to alleviate any misunderstanding of what it means to be Agile in a software context. One principle of the Agile Manifesto states that the highest priority is satisfying customers with early and often continuous delivery \cite[p. ~50]{meyer_2014}. It is apparent that at the heart of Agile is the value of producing software quickly and efficiently, without sacrificing a team's sustainability. One such software development method that has been in existence for over two decades, and fundamentally a practical expression of the principles of the Agile Manifesto, is Extreme Programming (XP). 
 
-Extreme Programming involves a set of practices including test-first development, automated testing, fast release cycles, refactoring, continuous integration, and among other things. Software professionals have embraced these set of practices for its effectiveness, even if arbitrarily and selectively picking from its' set. Bertrand Meyer, a well-respected individual in the software engineering community, considers many of the XP practices to be 'brilliant'; even going as far as to say that the practices of continuous integration and testing are major factors for the success of modern software projects \cite[p. ~154]{meyer_2014}. Software professionals and organizations have embodied these ideals to keep up with the demands of the software market, and have effectively put them into action.
+Extreme Programming involves a set of practices including test-first development, automated testing, fast release cycles, refactoring, continuous integration, and among other things. Software professionals have embraced these set of practices for its effectiveness, even if arbitrarily and selectively picking from its' set. Bertrand Meyer -- a well-respected and influential individual in the software engineering community -- considers many of the XP practices to be 'brilliant.' He goes as far as to say that the practices of continuous integration and testing are major factors for the success of modern software projects \cite[p. ~154]{meyer_2014}. It is no wonder that many software professionals and organizations have turned to Agile and now embody Agile practices to keep up with the demands of the software market.
 
-Of the ideal software practices come commonly known and used vocabulary: continuous integration, delivery, and deployment. Many software professionals however, have misunderstood the above vocabulary and at times, infuse them as one concept without careful and thoughtful distinction. It would therefore, be wise to define each component for what they represent and why it matters.
+Of the ideal software practices come commonly known and used vocabulary: continuous integration, delivery, and deployment. Many software professionals however, have misunderstood the these development practices and at times, infuse them as one concept without careful and thoughtful distinction. It would therefore, be wise to define each component for what they represent and why it matters.
 
-		\begin{itemize}[noitemsep]
-			\item What is Agile?
-			\begin{itemize}
-				\item \cite{bosch_2014} \& \cite{meyer_2014}
-			\end{itemize}
-			\item What are the core ideas of Agile?
-			\begin{itemize}
-				\item \cite{meyer_2014}
-			\end{itemize}
-			\item How does Agile tie in with CI/CDE/CD?
-			\begin{itemize}
-				\item \cite{shahin_babar_zhu_2017} \& \cite{stackify_2018}
-			\end{itemize}
-		\end{itemize}
-		\vspace{-7mm}
-		\subsubsection{Continuous Integration}
-		\begin{itemize}[noitemsep]
-			\item What does CI mean?
-			\begin{itemize}
-				\item \cite{shahin_babar_zhu_2017} \& \cite{stackify_2018}
-			\end{itemize}
-		\end{itemize}
-		\subsubsection{Continuous Delivery}
-		\begin{itemize}[noitemsep]
-			\item What does CDE mean?
-			\begin{itemize}
-				\item \cite{shahin_babar_zhu_2017} \& \cite{stackify_2018}
-			\end{itemize}
-		\end{itemize}
-		\subsubsection{Continuous Deployment}
-		\begin{itemize}[noitemsep]
-			\item What does CD mean?
-			\begin{itemize}
-				\item \cite{shahin_babar_zhu_2017} \& \cite{stackify_2018}
-			\end{itemize}
-		\end{itemize}
+Continuous integration is a practice entrusted to the active engagement of the members of a team developing code, of which they will participate by integrating and merging code to a source control management service such as GitHub; typically on a frequent basis. It contains an autonomous process that builds the software based on the new state of the code and verifies the software against a collection of tests. The important thing to note is that there is a quick feedback loop to the maintainers of the code based on the tests, determining whether any action is necessary to move forward. The main benefits to software organizations using continuous integration are shorter and faster release cycles, improvement of software product quality, and an increase of team productivity \cite[p. ~3910]{shahin_babar_zhu_2017}.
+
+It is absolutely crucial to note that using continuous delivery is state-dependent practice on continuous integration. The purpose of continuous delivery is to provision the software product to an production-like environment meant for acceptance testing by stakeholders such as the customers. The stakeholders are the main drivers for the decision of whether the software product can go into a real production environment. In the case that it is accepted, a manual process will be used to deploy it to production. The benefits of continuous delivery include reduced deployment risks, faster user feedback, and overall lower project costs \cite[p. ~3910-3911]{shahin_babar_zhu_2017}.
+
+The same state-dependence goes for continuous deployment as well; it cannot exist without continuous integration. There is also the implication that continuous delivery is a major part of continuous deployment. The distinguishing factor of continuous deployment versus continuous delivery is the extra step of an automated process of the deployment to production \cite[p. ~3911]{shahin_babar_zhu_2017}. For this to be possible, the software must be verified against a robust and fully automated collection of test suites, assuring with high confidence that the software works as it is intended to by design. Rod Cope, CTO of Rogue Wave Software says that companies that use continuous deployment can push hundreds or even thousands of releases into production per day \cite{stackify_2018}.
+
+Software professionals however, often get these three continuous software engineering practices confused or often times do not understand the deeper details that differentiate one from another. For example, Kofi Senaya, Director of Product from Clearbridge Mobile says "continuous Integration means that when [developers] are working on the same code, they are building and unit-testing it to prevent any integration problems" \cite{stackify_2018}. The first misunderstanding from Kofi is that he implies continuous integration only runs unit tests against the source code. Other levels of testing such as integration and system testing can also be implemented for continuous integration. The second misunderstanding is the implication that unit tests will cover all cases of integration functionality. There is a reason that integration tests exist, and that is for testing that module-to-module interaction works as intended.
 		
 	\subsection{Differences of Interpretation \& Implementation}
 		\subsubsection{Viewpoint of Software Professionals}
